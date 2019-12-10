@@ -1,3 +1,4 @@
+---
 - hosts: appdbs
   roles:
     - role: geerlingguy.postgresql
