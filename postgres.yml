@@ -3,6 +3,11 @@
     - role: geerlingguy.postgresql
       become: yes
 
+  handlers:
+    - name: restart postgres
+      service:
+        name: postgresql
+        state: restarted
 
 # - name: deploy postgres
 #   hosts: apps
