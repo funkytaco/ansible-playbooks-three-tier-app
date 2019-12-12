@@ -1,0 +1,14 @@
+[all:vars]
+# become                       = yes
+# become_user                  = root
+# ansible_port                 = 22
+# ansible_user                 = cloud-user
+# ansible_ssh_private_key_file = ~/.ssh/openstack.pem
+# ansible_python_interpreter   = /usr/bin/python
+
+
+[step1:children]
+jumpbox
+
+[jumpbox]
+workstation
