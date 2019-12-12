@@ -1,0 +1,8 @@
+---  
+  - name: Setup cloud-user key
+    become: true   
+    authorized_key: 
+      user: "{{ ssh_user }}"
+      state: present
+      key : "{{ ssh_pubkey_data }}"
+...
